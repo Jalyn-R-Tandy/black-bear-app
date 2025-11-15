@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Kyiv Type Serif';
+    src: url('/assets/fonts/KyivType_06-04-2020/KyivType-NoVariable/WEB/KyivTypeSerif-Bold.woff2') format('woff2'),
+         url('/assets/fonts/KyivType_06-04-2020/KyivType-NoVariable/WEB/KyivTypeSerif-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --primary-bg-color: #0D0001;
+    --text-color: #FEDDE1;
+    --primary-color: #FB7179;   
+    --secondary-color: #AA3805; 
+    --accent-color: #AA3805;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--text-color);
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+button {
+    padding: 6px 12px 6px 12px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+i {
+    padding-left: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 300;
+    letter-spacing: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+.heroSection {
+    background-image: url(assets/homepage-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.header {
+    background-color: rgba(254, 221, 225, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 18px;
+    width: 85%;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+}
+
+.nav__links {
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header__links {
+    width: 580px;
+    justify-content: space-around;
+}
+
+.cta__button {
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color);
+    border-radius: 12px;
+    width: 152px;
+    height: 48px;
+}
+
+.header__logo {
+    font-size: 1.5rem;
+    font-family: 'Kyiv Type Serif';
+    font-weight: 700;
+}
+
+.main {
+    margin-left: 112px;
+    margin-top: 128px;
+    align-self: flex-start;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+}
+
+.main__text {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 115%;
+    letter-spacing: 0.25rem;
+}
